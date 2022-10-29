@@ -10,7 +10,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-
+            int n = 7;
+            int d = 2;
+            bool p = true;
+            while (d * d <= n && p)
+            {
+                if (n % d == 0)
+                {
+                    p = false;
+                }
+                d++;
+            }
+            Console.WriteLine(p);
         }
     }
 }
