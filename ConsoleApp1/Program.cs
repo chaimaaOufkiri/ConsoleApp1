@@ -8,9 +8,8 @@ namespace ConsoleApp1
 {
     class Program
     {
-        static void Main(string[] args)
+        static void exercice1(int n)
         {
-            int n = 7;
             int d = 2;
             bool p = true;
             while (d * d <= n && p)
@@ -22,6 +21,10 @@ namespace ConsoleApp1
                 d++;
             }
             Console.WriteLine(p);
+        }
+        static void Main(string[] args)
+        {
+            exercice1(7);
         }
     }
 }
